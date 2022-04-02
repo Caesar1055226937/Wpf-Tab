@@ -12,6 +12,8 @@ namespace wpf_demo1
         {
             Menus.Add(new MenuItem { Name = "Page1", Path = new Uri("Pages/Page1.xaml", UriKind.Relative) });
             Menus.Add(new MenuItem { Name = "Page2", Path = new Uri("Pages/Page2.xaml", UriKind.Relative) });
+            Menus.Add(new MenuItem { Name = "UserControl1", Path = new Uri("UserControls/UserControl1.xaml", UriKind.Relative) });
+            Menus.Add(new MenuItem { Name = "UserControl2", Path = new Uri("UserControls/UserControl2.xaml", UriKind.Relative) });
 
             ButtonCommand = new DelegateCommand<MenuItem>(MenuChange);
             ContentRegion = Menus[0].Path;
